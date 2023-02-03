@@ -9,25 +9,25 @@ aco_core = [
 
 days_of_the_week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
-# Using slicing of the days_of_the_week variable, return a list representing weekdays
-print(days_of_the_week[1:6], "\n")
+# 1) sing slicing of the days_of_the_week variable, return a list representing weekdays
+print("1) ", days_of_the_week[1:6])
 
-# How many classes are in aco_core?
-print(str(len(aco_core)), "\n")
+# 2) how many classes are in aco_core?
+print("2) ", str(len(aco_core)))
 
-# Reverse the order of the list aco_core in place
-print(aco_core)
+# 3) reverse the order of the list aco_core in place
+print("3 before) ", aco_core)
 aco_core.reverse()
-print(aco_core, "\n")
+print("3 after) ", aco_core)
 
-# Bind a variable primes_under10 with the prime numbers less than 10
+# 4) bind a variable primes_under10 with the prime numbers less than 10
 primes = [1, 3, 5, 7]
-print(str(sum(primes)), "\n")
+print("4) ", str(sum(primes)))
 
-# Use list concatenation and slicing to define the binding for a variable named weekend that is a list of strings representing the weekend days
+# 5) use list concatenation and slicing to define the binding for a variable named weekend that is a list of strings representing the weekend days
 weekend = days_of_the_week[0::6]
-print(weekend, "\n")
+print("5) ", weekend)
 
-# What is the position of today's day in the days_of_the_week variable?
+# 6) what is the position of today's day in the days_of_the_week variable?
 weekday_as_int = datetime.now().weekday()  # docs are wrong, monday == 1
-print(days_of_the_week[weekday_as_int], "is at index", weekday_as_int)
+print("6) ", days_of_the_week[weekday_as_int], "is at index", weekday_as_int)

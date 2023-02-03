@@ -3,30 +3,30 @@
 address = ("4701 W Thunderbird Rd", "Glendale", "AZ", "85306")
 phone = ("602-543-5628", "work")
 
-# using indexing of the phone variable, return the phone number as a string
-print(str(phone[0]), "\n")
+# 1) using indexing of the phone variable, return the phone number as a string
+print("1) ", str(phone[0]))
 
-# Determine whether the address is in Arizona ("AZ") using sequence membership testing
-print("AZ" in address, "\n")
+# 2) etermine whether the address is in Arizona ("AZ") using sequence membership testing
+print("2) ", "AZ" in address)
 
-# In what position of address does "AZ" appear? Use the index method.
-print(address.index("AZ"), "\n")
+# 3) in what position of address does "AZ" appear? Use the index method.
+print("3) ", address.index("AZ"))
 
-# Using slicing of the address variable, return the zip code as a string
-print(str(address[3]), "\n")
+# 4) using slicing of the address variable, return the zip code as a string
+print("4) ", str(address[3]))
 
-# Unpack the phone variable by binding 2 variables: phone_number and phone_type
+# 5) unpack the phone variable by binding 2 variables: phone_number and phone_type
 (phone_number, phone_type) = phone
-print("phone_number: " + str(phone_number))
-print("phone_type: " + str(phone_type), "\n")
+print("5) ", "phone_number: " + str(phone_number))
+print("5) ", "phone_type: " + str(phone_type))
 
-# Bind the variable scores to a tuple of scores. Find the maximum score in the tuple
+# 6) bind the variable scores to a tuple of scores. Find the maximum score in the tuple
 scores = [75, 80, 93, 100, 65, 33]
 max = scores[0]
 for score in scores :
   if score > max:
     max = score
-print("max score =", str(max), "\n")
+print("6) ", "max score =", str(max))
 
-# How many scores are in the scores variable?
-print(len(scores))
+# 7) how many scores are in the scores variable?
+print("7) ", len(scores))
