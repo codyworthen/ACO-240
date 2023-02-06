@@ -31,3 +31,12 @@ print("5) ", weekend)
 # 6) what is the position of today's day in the days_of_the_week variable?
 weekday_as_int = datetime.now().weekday()  # docs are wrong, monday == 1
 print("6) ", days_of_the_week[weekday_as_int], "is at index", weekday_as_int)
+
+# 7) list concatenation
+firstNames = ["Joe", "Jim", "Betsy", "Shelly"]
+lastNames = states = ["Jones", "Patel", "Hicks", "Fisher"]
+fullNames = firstNames + lastNames
+print("7) ", fullNames)
+
+letters = list("abcdefg")
+print(letters)
